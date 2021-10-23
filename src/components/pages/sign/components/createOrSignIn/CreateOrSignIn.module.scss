@@ -1,0 +1,21 @@
+@import "../../../../../../public/styles/base.scss";
+
+.main {
+  @extend .base-form;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  p {
+    margin: 0;
+  }
+}
+
+.link {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.8);
+}

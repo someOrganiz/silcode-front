@@ -1,0 +1,48 @@
+.base-form {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.2);
+  margin-bottom: 20px;
+  color: rgb(83, 83, 83);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.base-form-input {
+  padding: 12px;
+  font-size: 14px;
+  color: rgb(83, 83, 83);
+  height: 40px;
+  outline: none;
+  border: 2px solid #b0b0b1;
+  border-radius: 3px;
+}
+
+.base-form-p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.base-form-button {
+  margin-top: 25px;
+  height: 40px;
+  width: 200px;
+  outline: none;
+  background-color: white;
+  border: 2px solid #b0b0b1;
+  border-radius: 0px;
+  align-self: center;
+  cursor: pointer;
+  color: rgb(83, 83, 83);
+  font-size: 1.05em;
+  font-weight: bold;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+}
+
+.base-form-button:hover {
+  background-color: #d4d4d4;
+  transition: all 0.2s linear;
+}

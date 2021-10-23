@@ -1,0 +1,83 @@
+.main {
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoContainer {
+  width: none;
+  height: none;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  filter: blur(1.3px) brightness(65%);
+}
+
+.videoContainer video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.textContainer {
+  width: 640px;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 1.7em;
+  margin: 70px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.textContainer h4 {
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: start;
+  text-shadow: rgb(146, 146, 146) 1px 0 6px;
+  margin-bottom: 30px;
+}
+
+.textContainer p {
+  font-size: 1em;
+  text-align: start;
+  color: rgb(230, 230, 230);
+}
+
+@media (max-width: 1200px) {
+  .textContainer h4 {
+    font-size: 1.8em;
+  }
+
+  .textContainer p {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 630px) {
+  .textContainer h4 {
+    font-size: 1.3em;
+  }
+
+  .textContainer p {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 360px) {
+  .textContainer h4 {
+    font-size: 0.7em;
+  }
+
+  .textContainer p {
+    font-size: 0.5em;
+  }
+}

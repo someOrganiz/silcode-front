@@ -1,0 +1,38 @@
+@import "../../../../../../public/styles/base.scss";
+
+.main {
+  @extend .base-form;
+  height: 280px;
+  width: 350px;
+}
+
+.imgContainer {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+
+  img {
+    height: 50px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    @extend .base-form-p;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  input {
+    @extend .base-form-input;
+  }
+
+  button {
+    @extend .base-form-button;
+  }
+}

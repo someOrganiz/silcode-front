@@ -1,0 +1,45 @@
+.main {
+  padding-top: 50px;
+  background-color: rgb(239, 242, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h2 {
+  font-size: 2em;
+  margin: 15px;
+  text-align: center;
+}
+
+.main p {
+  width: 600px;
+  text-align: center;
+  color: rgb(83, 83, 83);
+  margin: 15px;
+  font-size: 1.4em;
+}
+
+@media (max-width: 600px) {
+  .main p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main p {
+    width: 280px;
+  }
+}

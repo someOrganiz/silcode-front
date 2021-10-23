@@ -1,0 +1,45 @@
+.main {
+  margin: 30px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  position: absolute;
+  width: 40px;
+  top: 48%;
+  left: 43%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .subtitle {
+    width: 280px;
+  }
+}

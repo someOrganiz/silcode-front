@@ -1,0 +1,56 @@
+@import "../../../../../../public/styles/base.scss";
+
+.main {
+  @extend .base-form;
+  height: 330px;
+  width: 350px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    @extend .base-form-p;
+  }
+
+  input {
+    @extend .base-form-input;
+  }
+
+  button {
+    @extend .base-form-button;
+  }
+}
+
+.imgContainer {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+
+  img {
+    height: 50px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.passwordLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.8);
+  margin-top: 3px;
+  margin-bottom: 2px;
+}

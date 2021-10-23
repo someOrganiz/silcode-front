@@ -1,0 +1,27 @@
+.main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  width: 145px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.linksContainer a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.main h6 {
+  font-size: 1.2em;
+  color: rgb(90, 90, 90);
+  margin: 0;
+  margin-bottom: 30px;
+}
