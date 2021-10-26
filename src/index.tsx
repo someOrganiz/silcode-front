@@ -5,6 +5,7 @@ import Home from "./components/pages/home/Home";
 import { HOME, SIGNIN, SIGNUP, RESTOREPASSWORD } from "@utils/routes";
 import Sign from "./components/pages/sign/Sign";
 
+
 ReactDOM.render(
   <BrowserRouter>
     <App>
