@@ -7,18 +7,19 @@ const Welcome: FC = () => {
   return (
     <div className={styles.bgImg}>
       <div className={styles.container}>
-        <h1>Welcome to SilCode</h1>
-        <h3>we are glad to see you here</h3>
+        <h1>Добро пожаловать в Silcode!</h1>
+        <h3>Мы научим Вас программировать!</h3>
         <div className={styles.buttons}>
           <div className={styles.button}>
             <NavLink className={styles.link} to={HOME}>
-              Wanna start
+              Хочу учиться!
             </NavLink>
           </div>
           <div className={styles.button}>
             <NavLink className={styles.link} to={HOME}>
-              About learning
+              Об обучении
             </NavLink>
+            
           </div>
         </div>
       </div>
