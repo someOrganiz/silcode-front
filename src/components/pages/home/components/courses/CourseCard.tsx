@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./ProgramCard.module.css";
+import styles from "./CourseCard.module.css";
 
 interface CardProps {
   title: string;
@@ -7,7 +7,7 @@ interface CardProps {
   link: string;
 }
 
-const ProgramCard: FC<CardProps> = ({ title, img, link }) => {
+const CourseCard: FC<CardProps> = ({ title, img, link }) => {
   return (
     <a className={styles.main} href={link}>
       <img className={styles.image} src={img} alt="" />
@@ -21,4 +21,4 @@ const ProgramCard: FC<CardProps> = ({ title, img, link }) => {
   );
 };
 
-export default ProgramCard;
+export default CourseCard;

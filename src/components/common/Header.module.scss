@@ -2,7 +2,12 @@
   box-sizing: border-box;
   display: flex;
   background: white;
-  border-bottom: 7px solid #bebebe;
+  -webkit-box-shadow: 0px 9px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 9px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 9px 8px 0px rgba(34, 60, 80, 0.2);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
@@ -53,19 +58,21 @@
 .navOptions {
   width: 100%;
   padding-left: 25px;
-  display: grid;
-  justify-content: end;
-  grid-template-columns: repeat(4, 130px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   list-style-type: none;
   margin: 0;
   min-height: 80px;
 
   li {
-    width: 100%;
-    height: 100%;
+    width: 130px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: unset;
+    position: relative;
   }
 }
 
@@ -78,6 +85,9 @@
   justify-content: center;
   align-items: center;
   transition: all 0.2s linear;
+  margin-top: 0;
+  border: none;
+  font-weight: normal;
 }
 
 .link:hover {
@@ -108,7 +118,6 @@
 @media (max-width: 736px) {
   .header {
     height: 60px;
-    border-bottom: 4px solid #b0b0b1;
   }
 
   .logo {

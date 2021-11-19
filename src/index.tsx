@@ -2,20 +2,35 @@ import ReactDOM from "react-dom";
 import App from "./components/common/App";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./components/pages/home/Home";
-import { HOME, SIGNIN, SIGNUP, RESTOREPASSWORD } from "@utils/routes";
+import { HOME, SIGNIN, SIGNUP, RESTOREPASSWORD, INFO } from "@utils/routes";
 import Sign from "./components/pages/sign/Sign";
+import Store from "./store/store";
+import { createContext } from "react";
+import UserInfo from "./components/pages/info/UserInfo";
+import Profile from "./components/pages/profile/Profile";
+import { PROFILE } from "./utils/routes";
 
+interface IStore {
+  store: Store;
+}
+
+const store = new Store();
+export const Context = createContext<IStore>({ store });
 ReactDOM.render(
-  <BrowserRouter>
-    <App>
-      <Switch>
-        <Route exact path={HOME} component={Home} />
-        <Route path={SIGNIN} component={Sign} />
-        <Route path={SIGNUP} component={Sign} />
-        <Route path={RESTOREPASSWORD} component={Sign} />
-        <Redirect to={HOME} />
-      </Switch>
-    </App>
-  </BrowserRouter>,
+  <Context.Provider value={{ store }}>
+    <BrowserRouter>
+      <App>
+        <Switch>
+          <Route exact path={HOME} component={Home} />
+          <Route path={SIGNIN} component={Sign} />
+          <Route path={SIGNUP} component={Sign} />
+          <Route path={RESTOREPASSWORD} component={Sign} />
+          <Route path={INFO} component={UserInfo} />
+          <Route path={PROFILE} component={Profile} />
+          <Redirect to={HOME} />
+        </Switch>
+      </App>
+    </BrowserRouter>
+  </Context.Provider>,
   document.getElementById("root")
 );

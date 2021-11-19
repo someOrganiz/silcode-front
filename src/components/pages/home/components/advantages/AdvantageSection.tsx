@@ -1,12 +1,12 @@
 import React, { FC } from "react";
-import AdvantagesCard from "./AdvantagesCard";
-import styles from "./Advantages.module.css";
+import AdvantagesCard from "./AdvantageCard";
+import styles from "./AdvantageSection.module.css";
 import zoomImg from "../../../../../assets/peopleZoom.jpg";
 import compImg from "../../../../../assets/notebookIMG.jpeg";
 import confImg from "../../../../../assets/videoConf.png";
 import { LEFT, RIGHT } from "../../../../../utils/constants";
 
-const Advantages: FC = () => {
+const AdvantageSection: FC = () => {
   const [renderKey, setRenderKey] = React.useState<string>(RIGHT);
 
   function handleResize() {
@@ -27,7 +27,7 @@ const Advantages: FC = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <AdvantagesCard
         direction={LEFT}
         img={zoomImg}
@@ -52,8 +52,8 @@ const Advantages: FC = () => {
           "Онлайн-дискуссии и чат с преподавателем позволяют Вам коммуницировать и всегда отвечать на Ваши вопросы."
         }
       />
-    </div>
+    </section>
   );
 };
 
-export default Advantages;
+export default AdvantageSection;

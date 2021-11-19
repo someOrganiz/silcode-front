@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./TryItForm.module.css";
+import styles from "./TryForm.module.css";
 
 const TryItForm: FC = () => {
   return (

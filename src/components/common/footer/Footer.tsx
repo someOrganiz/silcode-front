@@ -25,7 +25,7 @@ const Footer: FC = () => {
   };
 
   return (
-    <div className={styles.main}>
+    <footer className={styles.main}>
       <div className={styles.wrapper}>
         <div className={styles.imgContainer}>
           <img src={silCode} alt="logo.img" />
@@ -34,7 +34,7 @@ const Footer: FC = () => {
         <FooterColumn title={"О SILCODE"} linksObj={secondColumn} />
         <FooterColumn title={"ПОМОЩЬ"} linksObj={thirdColumn} />
       </div>
-    </div>
+    </footer>
   );
 };
 

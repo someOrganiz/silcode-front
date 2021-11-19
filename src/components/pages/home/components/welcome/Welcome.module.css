@@ -1,5 +1,6 @@
 .bgImg {
   background-image: url("../../../../../assets/laptop_image2.jpg");
+  margin-top: 80px;
   height: 900px;
   width: 100%;
   background-color: #cccccc;

@@ -1,13 +1,18 @@
 .main {
-  background-color: rgb(40, 40, 40);
-  height: 340px;
+  background-color: #282828;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 .wrapper {
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -20,7 +25,7 @@
   justify-content: center;
   margin-right: 50px;
   margin-left: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 10px; */
   width: 145px;
 }
 

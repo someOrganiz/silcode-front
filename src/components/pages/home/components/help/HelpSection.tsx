@@ -10,7 +10,7 @@ import settings from "../../../../../assets/settingsApple.png";
 
 const HelpSection: FC = () => {
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <h2>Мы поможем вам учиться более эффективно</h2>
       <p>
         Мы предлагаем вам полную свободу действий для создания лучших проектных
@@ -60,7 +60,7 @@ const HelpSection: FC = () => {
           }
         />
       </div>
-    </div>
+    </section>
   );
 };
 

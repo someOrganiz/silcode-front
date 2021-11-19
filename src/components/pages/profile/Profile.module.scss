@@ -1,0 +1,14 @@
+.main {
+  // margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  // margin: 80px;
+  min-height: 100vh;
+
+  .profileLogo {
+    height: 60px;
+    width: auto;
+  }
+}

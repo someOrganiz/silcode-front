@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { Doughnut } from "react-chartjs-2";
-import styles from "./InterestingCard.module.css";
+import styles from "./FactCard.module.css";
 
 interface CardProps {
   percent: number;
   text: string;
 }
 
-const InterestingCard: FC<CardProps> = ({ percent, text }) => {
+const FactCard: FC<CardProps> = ({ percent, text }) => {
   const chartdata = {
     datasets: [
       {
@@ -38,4 +38,4 @@ const InterestingCard: FC<CardProps> = ({ percent, text }) => {
   );
 };
 
-export default InterestingCard;
+export default FactCard;

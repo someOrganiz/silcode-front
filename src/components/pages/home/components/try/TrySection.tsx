@@ -1,11 +1,11 @@
 import { FC } from "react";
-import styles from "./TryIt.module.css";
-import TryItForm from "./TryItForm";
+import styles from "./TrySection.module.css";
+import TryItForm from "./TryForm";
 import video from "../../../../../assets/video.mp4";
 
-const TryIt: FC = () => {
+const TrySection: FC = () => {
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <div className={styles.textContainer}>
         <h4>Попробуйте нашe введение к курсу, это бесплатно!</h4>
         <p>
@@ -20,8 +20,8 @@ const TryIt: FC = () => {
           <source src={video} type="video/mp4" />
         </video>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default TryIt;
+export default TrySection;

@@ -13,14 +13,6 @@
   p {
     @extend .base-form-p;
   }
-
-  input {
-    @extend .base-form-input;
-  }
-
-  button {
-    @extend .base-form-button;
-  }
 }
 
 .imgContainer {

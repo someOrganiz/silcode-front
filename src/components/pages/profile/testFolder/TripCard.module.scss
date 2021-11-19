@@ -1,0 +1,18 @@
+.a {
+  position: relative;
+  img {
+    height: 200px;
+    width: 650px;
+    object-fit: cover;
+    position: relative;
+  }
+  p {
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    left: 45%;
+  }
+  // display: flex;
+}

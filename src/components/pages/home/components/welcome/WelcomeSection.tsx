@@ -3,9 +3,9 @@ import { FC } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Welcome.module.css";
 
-const Welcome: FC = () => {
+const WelcomeSection: FC = () => {
   return (
-    <div className={styles.bgImg}>
+    <section className={styles.bgImg}>
       <div className={styles.container}>
         <h1>Welcome to SilCode</h1>
         <h3>we are glad to see you here</h3>
@@ -22,8 +22,8 @@ const Welcome: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Welcome;
+export default WelcomeSection;

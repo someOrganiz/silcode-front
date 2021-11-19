@@ -1,21 +1,21 @@
 import { FC } from "react";
-import Advantages from "./components/advantages/Advantages";
-import Footer from "./components/footer/Footer";
+import AdvantageSection from "./components/advantages/AdvantageSection";
+import Footer from "../../common/footer/Footer";
 import HelpSection from "./components/help/HelpSection";
-import Interesting from "./components/interesting/Interesting";
-import Programs from "./components/programs/Programs";
-import TryIt from "./components/tryIt/TryIt";
-import Welcome from "./components/welcome/Welcome";
+import FactSection from "./components/facts/FactSection";
+import CourseSection from "./components/courses/CourseSection";
+import TrySection from "./components/try/TrySection";
+import WelcomeSection from "./components/welcome/WelcomeSection";
 
 const Home: FC = () => {
   return (
     <div>
-      <Welcome />
-      <Advantages />
+      <WelcomeSection />
+      <AdvantageSection />
       <HelpSection />
-      <Interesting />
-      <Programs />
-      <TryIt />
+      <FactSection />
+      <CourseSection />
+      <TrySection />
       <Footer />
     </div>
   );
