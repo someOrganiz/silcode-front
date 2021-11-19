@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import AdvantagesCard from "./AdvantageCard";
 import styles from "./AdvantageSection.module.css";
-import zoomImg from "../../../../../assets/peopleZoom.jpg";
-import compImg from "../../../../../assets/notebookIMG.jpeg";
-import confImg from "../../../../../assets/videoConf.png";
-import { LEFT, RIGHT } from "../../../../../utils/constants";
+import zoomImg from "@assets/homePage/peopleZoom.jpg";
+import compImg from "@assets/homePage/notebookIMG.jpeg";
+import confImg from "@assets/homePage/videoConf.png";
+import { LEFT, RIGHT } from "@utils/constants";
 
 const AdvantageSection: FC = () => {
   const [renderKey, setRenderKey] = React.useState<string>(RIGHT);

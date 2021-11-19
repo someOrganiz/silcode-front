@@ -1,7 +1,7 @@
 import { FC } from "react";
 import FooterColumn from "./FooterColumn";
 import styles from "./Footer.module.css";
-import silCode from "@assets/SilCodeWhite.png";
+import silCode from "@assets/logo/SilCodeWhite.png";
 import { HOME } from "@utils/routes";
 
 const Footer: FC = () => {

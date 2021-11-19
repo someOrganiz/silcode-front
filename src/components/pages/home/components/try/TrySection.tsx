@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./TrySection.module.css";
 import TryItForm from "./TryForm";
-import video from "../../../../../assets/video.mp4";
+import video from "@assets/homePage/video.mp4";
 
 const TrySection: FC = () => {
   return (

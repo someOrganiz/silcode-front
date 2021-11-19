@@ -1,5 +1,5 @@
 import style from "./SignForm.module.scss";
-import logo from "@assets/SilCodeLogoHorizontal.jpg";
+import logo from "@assets/logo/SilCodeHorizontal.jpg";
 import { FC, FormEventHandler, useContext, useState } from "react";
 import { RESTOREPASSWORD, SIGNIN } from "@utils/routes";
 import { NavLink, useHistory } from "react-router-dom";
@@ -7,7 +7,7 @@ import BaseInput from "../../../../common/input/BaseInput";
 import BaseButton from "../../../../common/button/BaseButton";
 import { Context } from "../../../../../index";
 import { observer } from "mobx-react-lite";
-import { PROFILE, INFO } from "../../../../../utils/routes";
+import { PROFILE, INFO } from "@utils/routes";
 interface FormProp {
   title: string;
   route: string;
@@ -65,7 +65,7 @@ const SignForm: FC<FormProp> = ({ title, route }) => {
         {route === SIGNIN ? (
           <div className={style.passwordLine}>
             <p>Password</p>
-            <NavLink className={style.link} to={RESTOREPASSWORD}>
+            <NavLink className={style.link} to={RESTOREPASSWORD} tabIndex={-1}>
               Forgot password?
             </NavLink>
           </div>

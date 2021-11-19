@@ -3,27 +3,24 @@
   flex-direction: row;
 }
 
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h5 {
+    font-size: 16px;
+    align-self: center;
+    width: 85%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+    text-align: center;
+    color: black;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: row;
-  // border: 1px solid grey;
   background-color: rgba(228, 228, 228, 0.274);
-  // border-radius: 5px;
   padding: 30px;
-  margin: 30px;
-  -webkit-box-shadow: 4px 7px 11px 0px rgba(34, 60, 80, 0.22);
-  -moz-box-shadow: 4px 7px 11px 0px rgba(34, 60, 80, 0.22);
-  box-shadow: 4px 7px 11px 0px rgba(34, 60, 80, 0.22);
 }
-
-.section {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  h4 {
-    align-self: center;
-  }
-}
-// .main {
-//   display: flex;
-// }

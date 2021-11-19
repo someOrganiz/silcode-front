@@ -27,11 +27,10 @@ module.exports = {
     publicPath: "/",
   },
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx", ".png", ".jpeg"],
     alias: {
-      "@assets": resolve(__dirname, "/src/assets"),
+      "@assets": resolve(__dirname, "src/assets"),
       "@utils": resolve(__dirname, "src/utils"),
-      "@publicStyles": resolve(__dirname, "public/styles"),
     },
   },
   optimization: {

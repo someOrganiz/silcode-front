@@ -46,3 +46,10 @@
   margin-top: 3px;
   margin-bottom: 2px;
 }
+
+.link:active,
+.link:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}

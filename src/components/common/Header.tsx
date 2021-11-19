@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styles from "./Header.module.scss";
-import silCodeImg from "@assets/SilCode.png";
+import silCodeImg from "@assets/logo/SilCode.png";
 
 import { NavLink, useHistory } from "react-router-dom";
 import { HOME } from "@utils/routes";

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./RestoreForm.module.scss";
-import logo from "@assets/SilCodeLogoHorizontal.jpg";
+import logo from "@assets/logo/SilCodeHorizontal.jpg";
 
 const RestoreForm: FC = () => {
   return (

@@ -6,9 +6,19 @@
   align-items: center;
   // margin: 80px;
   min-height: 100vh;
+}
 
-  .profileLogo {
-    height: 60px;
-    width: auto;
-  }
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 470px;
+  padding-left: 40px;
+  color: black;
+}
+
+.profileLogo {
+  height: 60px;
+  width: auto;
 }

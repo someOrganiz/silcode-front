@@ -1,12 +1,12 @@
 import { FC } from "react";
 import styles from "./HelpSection.module.css";
 import HelpCard from "./HelpCard";
-import comp from "../../../../../assets/desktopApple.png";
-import phone from "../../../../../assets/telephoneApple.png";
-import briefcase from "../../../../../assets/briefcaseApple.png";
-import womanMac from "../../../../../assets/womanBehindMacApple.png";
-import weightLifter from "../../../../../assets/weightLifterApple.png";
-import settings from "../../../../../assets/settingsApple.png";
+import comp from "@assets/appleEmoji/desktop.png";
+import phone from "@assets/appleEmoji/telephone.png";
+import briefcase from "@assets/appleEmoji/briefcase.png";
+import womanMac from "@assets/appleEmoji/womanMac.png";
+import weightLifter from "@assets/appleEmoji/weightLifter.png";
+import settings from "@assets/appleEmoji/settings.png";
 
 const HelpSection: FC = () => {
   return (
